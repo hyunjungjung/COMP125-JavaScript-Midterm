@@ -12,6 +12,7 @@
 // setup your IIFE (Immediately Invoked Function Expression)
 (function () {
     "use strict";
+
     //define an array of HTML elements
     var paragraphElements = [];
     paragraphElements[0] = document.getElementById("IntroParagraph");
@@ -24,12 +25,6 @@
     paragraphElements[7] = document.getElementById("Hydra");
     paragraphElements[8] = document.getElementById("Ithaca");
     paragraphElements[9] = document.getElementById("Gavdos");
-
-    var parentElement = document.querySelector("div.row");
-
-    var firstParagraph = document.querySelector("div.row p");
-
-    var secondParagraph = document.createElement("p");
 
     var paragraphs = [];
     // data for main page
@@ -50,7 +45,7 @@
             paragraphElements[index].innerHTML = paragraphs[index];
         }
     }
-    // reference to the firstName field
+    // reference to the contact fields
     var firstName = document.getElementById("firstName");
     var lastName = document.getElementById("lastName");
     var email = document.getElementById("email");
@@ -73,7 +68,7 @@
     /**
       * This function shows the input from each form field on the console
       * 
-      * @method showSubmittedDate
+      * @method showSubmittedData
       * @return {void} 
       */
     function showSubmittedData() {
@@ -87,6 +82,6 @@
 
     }
 
-    window.addEventListener("load", PageSwitcher);
+
 })();
 
